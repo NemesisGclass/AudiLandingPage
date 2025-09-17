@@ -1,10 +1,7 @@
 @import "tailwindcss";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
+  justify-content: center;
   font-family: 'Audiowide', cursive;
+  background: #0A0A0A;
 }
