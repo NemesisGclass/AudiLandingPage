@@ -86,9 +86,9 @@ const Navbar = () => {
 
         {/* Right side - Navigation Links */}
         <div className="flex items-center">
-          <a href="#shop" className="nav-link-glow text-white hover:text-gray-300 font-medium" style={{marginRight: '4rem'}}>
-            Shop
-          </a>
+          <Link to="/electric" className="nav-link-glow text-white hover:text-gray-300 font-medium" style={{marginRight: '4rem'}}>
+            Electric
+          </Link>
           <Link to="/contact" className="nav-link-glow text-white hover:text-gray-300 font-medium">
             Contact
           </Link>
@@ -150,13 +150,13 @@ const Navbar = () => {
           >
             Test Drive
           </Link>
-          <a 
-            href="#shop" 
+          <Link 
+            to="/electric" 
             className="nav-link-glow block text-white hover:text-gray-300 font-medium py-2"
             onClick={() => setIsMenuOpen(false)}
           >
-            Shop
-          </a>
+            Electric
+          </Link>
           <Link 
             to="/contact" 
             className="nav-link-glow block text-white hover:text-gray-300 font-medium py-2"

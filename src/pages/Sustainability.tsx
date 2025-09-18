@@ -79,7 +79,7 @@ const Sustainability: React.FC = () => {
                 <div 
                   className="h-96 bg-cover bg-center rounded-2xl"
                   style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
+                    backgroundImage: `url('/electric-car.png')`
                   }}
                 ></div>
               </div>

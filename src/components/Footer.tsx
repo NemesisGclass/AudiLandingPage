@@ -127,7 +127,7 @@ const Footer: React.FC = () => {
               <li style={{marginBottom: '1rem'}}><Link to="/electric" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Electric Vehicles</Link></li>
               <li style={{marginBottom: '1rem'}}><a href="#sport" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Sport Models</a></li>
               <li style={{marginBottom: '1rem'}}><a href="#luxury" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Luxury Models</a></li>
-              <li style={{marginBottom: '0'}}><a href="#configurator" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Vehicle Configurator</a></li>
+              <li style={{marginBottom: '0'}}><Link to="/configure" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Vehicle Configurator</Link></li>
             </ul>
           </div>
 
@@ -135,11 +135,11 @@ const Footer: React.FC = () => {
           <div style={{textAlign: 'center'}}>
             <h3 style={{color: 'white', fontWeight: '600', fontSize: '1.125rem', marginBottom: '1.5rem'}}>Services</h3>
             <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
-              <li style={{marginBottom: '1rem'}}><a href="#myaudi" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>myAudi</a></li>
-              <li style={{marginBottom: '1rem'}}><a href="#service" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Service & Maintenance</a></li>
-              <li style={{marginBottom: '1rem'}}><a href="#parts" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Parts & Accessories</a></li>
-              <li style={{marginBottom: '1rem'}}><a href="#finance" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Finance & Leasing</a></li>
-              <li style={{marginBottom: '0'}}><a href="#insurance" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Insurance</a></li>
+              <li style={{marginBottom: '1rem'}}><Link to="/myaudi" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>myAudi</Link></li>
+              <li style={{marginBottom: '1rem'}}><Link to="/service" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Service & Maintenance</Link></li>
+              <li style={{marginBottom: '1rem'}}><Link to="/parts" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Parts & Accessories</Link></li>
+              <li style={{marginBottom: '1rem'}}><Link to="/finance" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Finance & Leasing</Link></li>
+              <li style={{marginBottom: '0'}}><Link to="/insurance" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Insurance</Link></li>
             </ul>
           </div>
 
@@ -148,10 +148,10 @@ const Footer: React.FC = () => {
             <h3 style={{color: 'white', fontWeight: '600', fontSize: '1.125rem', marginBottom: '1.5rem'}}>Support</h3>
             <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
               <li style={{marginBottom: '1rem'}}><Link to="/contact" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Contact Us</Link></li>
-              <li style={{marginBottom: '1rem'}}><a href="#dealers" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Find a Dealer</a></li>
+              <li style={{marginBottom: '1rem'}}><Link to="/find-dealer" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Find a Dealer</Link></li>
               <li style={{marginBottom: '1rem'}}><Link to="/test-drive" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Schedule Test Drive</Link></li>
-              <li style={{marginBottom: '1rem'}}><a href="#support" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Customer Support</a></li>
-              <li style={{marginBottom: '0'}}><a href="#faq" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>FAQ</a></li>
+              <li style={{marginBottom: '1rem'}}><Link to="/customer-support" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Customer Support</Link></li>
+              <li style={{marginBottom: '0'}}><Link to="/faq" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>FAQ</Link></li>
             </ul>
           </div>
         </div>
@@ -211,17 +211,20 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Legal Links */}
-          <div className="legal-links">
-            <a href="#privacy" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Privacy Policy</a>
-            <a href="#terms" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Terms of Service</a>
-            <a href="#cookies" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Cookie Policy</a>
-            <a href="#legal" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Legal Notice</a>
+        </div>
+        
+        {/* Legal Links */}
+        <div style={{textAlign: 'center', marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid rgba(55, 65, 81, 0.3)'}}>
+          <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem', marginBottom: '2rem'}}>
+            <Link to="/privacy" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Privacy Policy</Link>
+            <Link to="/terms" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Terms of Service</Link>
+            <Link to="/cookies" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Cookie Policy</Link>
+            <Link to="/legal" style={{color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none'}} onMouseOver={(e) => e.target.style.color = 'white'} onMouseOut={(e) => e.target.style.color = '#9ca3af'}>Legal Notice</Link>
           </div>
         </div>
         
         {/* Copyright */}
-        <div style={{textAlign: 'center', marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid rgba(55, 65, 81, 0.3)'}}>
+        <div style={{textAlign: 'center', marginTop: '2rem', paddingTop: '2rem', borderTop: '1px solid rgba(55, 65, 81, 0.3)'}}>
           <p style={{color: '#6b7280', fontSize: '0.875rem', margin: 0}}>
             © 2025 Audi AG. All rights reserved. | Audi is a trademark of AUDI AG.
           </p>

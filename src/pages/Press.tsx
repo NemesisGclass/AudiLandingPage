@@ -4,180 +4,281 @@ import Footer from '../components/Footer'
 
 const Press: React.FC = () => {
   return (
-    <div className="min-h-screen text-white" style={{backgroundColor: '#1C1C1C'}}>
+    <div style={{backgroundColor: '#1C1C1C', minHeight: '100vh'}}>
       <Navbar />
       
-      <div className="pt-20">
-        {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-b from-gray-900 to-black">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-8">Press Center</h1>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Stay updated with the latest news, press releases, and media resources from Audi.
+      {/* Hero Section */}
+      <section className="relative py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            Press Center
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            Stay updated with the latest news, announcements, and media resources from Audi.
+          </p>
+        </div>
+      </section>
+
+      {/* Latest News Section */}
+      <section className="py-20" style={{backgroundColor: '#1C1C1C'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">Latest News</h2>
+            <p className="text-xl text-gray-300">
+              Stay informed about Audi's latest developments and announcements.
             </p>
           </div>
-        </section>
-
-        {/* Latest News */}
-        <section className="py-20" style={{backgroundColor: '#1C1C1C'}}>
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-8">Latest News</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="glass-card rounded-3xl p-8">
+              <div className="w-full h-48 bg-gray-600 rounded-2xl mb-6"></div>
+              <div className="text-sm text-gray-400 mb-2">December 15, 2024</div>
+              <h3 className="text-xl font-bold mb-4">Audi Announces New Electric Vehicle Lineup for 2025</h3>
+              <p className="text-gray-400 mb-6">
+                Audi reveals its expanded electric vehicle portfolio, including new models and enhanced technology features.
+              </p>
+              <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
+                Read More
+              </button>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <article className="bg-gray-900 rounded-lg overflow-hidden">
-                <div 
-                  className="h-48 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
-                  }}
-                ></div>
-                <div className="p-6">
-                  <span className="text-sm text-gray-400">December 15, 2024</span>
-                  <h3 className="text-xl font-bold mb-3 mt-2">Audi Announces New Electric Vehicle Lineup</h3>
-                  <p className="text-gray-400 mb-4">
-                    Audi reveals its latest electric vehicles featuring advanced battery technology and autonomous driving capabilities.
-                  </p>
-                  <a href="#" className="text-white hover:text-gray-300 font-semibold">Read More →</a>
-                </div>
-              </article>
-
-              <article className="bg-gray-900 rounded-lg overflow-hidden">
-                <div 
-                  className="h-48 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
-                  }}
-                ></div>
-                <div className="p-6">
-                  <span className="text-sm text-gray-400">December 10, 2024</span>
-                  <h3 className="text-xl font-bold mb-3 mt-2">Audi Wins Design Excellence Award</h3>
-                  <p className="text-gray-400 mb-4">
-                    The Audi design team receives recognition for innovative vehicle design and sustainable materials.
-                  </p>
-                  <a href="#" className="text-white hover:text-gray-300 font-semibold">Read More →</a>
-                </div>
-              </article>
-
-              <article className="bg-gray-900 rounded-lg overflow-hidden">
-                <div 
-                  className="h-48 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
-                  }}
-                ></div>
-                <div className="p-6">
-                  <span className="text-sm text-gray-400">December 5, 2024</span>
-                  <h3 className="text-xl font-bold mb-3 mt-2">Sustainability Milestone Achieved</h3>
-                  <p className="text-gray-400 mb-4">
-                    Audi reaches carbon neutrality in production facilities across Europe.
-                  </p>
-                  <a href="#" className="text-white hover:text-gray-300 font-semibold">Read More →</a>
-                </div>
-              </article>
+            
+            <div className="glass-card rounded-3xl p-8">
+              <div className="w-full h-48 bg-gray-600 rounded-2xl mb-6"></div>
+              <div className="text-sm text-gray-400 mb-2">December 10, 2024</div>
+              <h3 className="text-xl font-bold mb-4">Audi Achieves Record Sales in North American Market</h3>
+              <p className="text-gray-400 mb-6">
+                Strong performance in the US and Canadian markets drives Audi's global growth strategy forward.
+              </p>
+              <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
+                Read More
+              </button>
+            </div>
+            
+            <div className="glass-card rounded-3xl p-8">
+              <div className="w-full h-48 bg-gray-600 rounded-2xl mb-6"></div>
+              <div className="text-sm text-gray-400 mb-2">December 5, 2024</div>
+              <h3 className="text-xl font-bold mb-4">Audi Partners with Tech Leaders for Autonomous Driving</h3>
+              <p className="text-gray-400 mb-6">
+                Strategic partnerships accelerate development of next-generation autonomous driving technologies.
+              </p>
+              <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
+                Read More
+              </button>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Press Releases */}
-        <section className="py-20" style={{backgroundColor: '#1C1C1C'}}>
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-8">Press Releases</h2>
-            </div>
-            <div className="space-y-6">
-              <div className="bg-black/50 rounded-lg p-6 border border-gray-800">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                  <div>
-                    <span className="text-sm text-gray-400">December 20, 2024</span>
-                    <h3 className="text-2xl font-bold mb-2 mt-1">Audi Q8 e-tron Sets New Range Record</h3>
-                    <p className="text-gray-300">Official press release announcing the new range capabilities of the Audi Q8 e-tron.</p>
-                  </div>
-                  <button className="mt-4 md:mt-0 bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
-                    Download PDF
-                  </button>
-                </div>
-              </div>
-              <div className="bg-black/50 rounded-lg p-6 border border-gray-800">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                  <div>
-                    <span className="text-sm text-gray-400">December 18, 2024</span>
-                    <h3 className="text-2xl font-bold mb-2 mt-1">Audi Sport Performance Center Opens</h3>
-                    <p className="text-gray-300">New state-of-the-art facility dedicated to high-performance vehicle development.</p>
-                  </div>
-                  <button className="mt-4 md:mt-0 bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
-                    Download PDF
-                  </button>
-                </div>
-              </div>
-              <div className="bg-black/50 rounded-lg p-6 border border-gray-800">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                  <div>
-                    <span className="text-sm text-gray-400">December 12, 2024</span>
-                    <h3 className="text-2xl font-bold mb-2 mt-1">Partnership with Tech Giants Announced</h3>
-                    <p className="text-gray-300">Strategic collaboration for next-generation autonomous driving technology.</p>
-                  </div>
-                  <button className="mt-4 md:mt-0 bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
-                    Download PDF
-                  </button>
-                </div>
-              </div>
-            </div>
+      {/* Press Releases Section */}
+      <section className="py-20 bg-gradient-to-r from-gray-800 to-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">Press Releases</h2>
+            <p className="text-xl text-gray-300">
+              Official announcements and corporate communications from Audi.
+            </p>
           </div>
-        </section>
-
-        {/* Media Resources */}
-        <section className="py-20" style={{backgroundColor: '#1C1C1C'}}>
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-8">Media Resources</h2>
+          
+          <div className="space-y-6">
+            <div className="glass-card rounded-3xl p-8">
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div className="flex-1">
+                  <div className="text-sm text-gray-400 mb-2">December 20, 2024</div>
+                  <h3 className="text-2xl font-bold mb-4">Audi Unveils Revolutionary Battery Technology</h3>
+                  <p className="text-gray-300 mb-4">
+                    New solid-state battery technology promises 50% longer range and faster charging times for future Audi electric vehicles.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Technology</span>
+                    <span className="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm">Electric Vehicles</span>
+                    <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">Innovation</span>
+                  </div>
+                </div>
+                <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors mt-4 md:mt-0">
+                  Download PDF
+                </button>
+              </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-black">📸</span>
+            
+            <div className="glass-card rounded-3xl p-8">
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div className="flex-1">
+                  <div className="text-sm text-gray-400 mb-2">December 18, 2024</div>
+                  <h3 className="text-2xl font-bold mb-4">Audi Reports Strong Q4 Financial Results</h3>
+                  <p className="text-gray-300 mb-4">
+                    Record revenue and profitability driven by strong demand for premium vehicles and successful cost management initiatives.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full text-sm">Financial</span>
+                    <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Performance</span>
+                    <span className="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm">Growth</span>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold mb-4">High-Res Images</h3>
-                <p className="text-gray-400 mb-4">Download high-resolution images of our vehicles</p>
-                <button className="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
-                  Access Gallery
+                <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors mt-4 md:mt-0">
+                  Download PDF
                 </button>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-black">🎥</span>
+            </div>
+            
+            <div className="glass-card rounded-3xl p-8">
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div className="flex-1">
+                  <div className="text-sm text-gray-400 mb-2">December 12, 2024</div>
+                  <h3 className="text-2xl font-bold mb-4">Audi Expands Manufacturing Operations in North America</h3>
+                  <p className="text-gray-300 mb-4">
+                    New production facility in Mexico will support growing demand for Audi vehicles in the North American market.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-sm">Manufacturing</span>
+                    <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">Expansion</span>
+                    <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">North America</span>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold mb-4">Video Content</h3>
-                <p className="text-gray-400 mb-4">Professional videos and B-roll footage</p>
-                <button className="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
-                  View Videos
-                </button>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-black">📊</span>
-                </div>
-                <h3 className="text-xl font-bold mb-4">Fact Sheets</h3>
-                <p className="text-gray-400 mb-4">Technical specifications and vehicle data</p>
-                <button className="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
-                  Download PDFs
-                </button>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-black">👤</span>
-                </div>
-                <h3 className="text-xl font-bold mb-4">Expert Contacts</h3>
-                <p className="text-gray-400 mb-4">Connect with our technical experts</p>
-                <button className="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
-                  Contact Us
+                <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors mt-4 md:mt-0">
+                  Download PDF
                 </button>
               </div>
             </div>
           </div>
-        </section>
-      </div>
-      
+        </div>
+      </section>
+
+      {/* Media Resources Section */}
+      <section className="py-20" style={{backgroundColor: '#1C1C1C'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">Media Resources</h2>
+            <p className="text-xl text-gray-300">
+              High-resolution images, videos, and other media assets for press use.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="glass-card rounded-3xl p-8 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">📸</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Press Photos</h3>
+              <p className="text-gray-400 mb-6">High-resolution images of Audi vehicles, executives, and facilities.</p>
+              <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
+                Browse Gallery
+              </button>
+            </div>
+            
+            <div className="glass-card rounded-3xl p-8 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">🎥</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Video Content</h3>
+              <p className="text-gray-400 mb-6">Product videos, commercials, and behind-the-scenes content.</p>
+              <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
+                Watch Videos
+              </button>
+            </div>
+            
+            <div className="glass-card rounded-3xl p-8 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">📄</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Fact Sheets</h3>
+              <p className="text-gray-400 mb-6">Technical specifications and detailed information about Audi models.</p>
+              <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
+                Download Files
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Awards Section */}
+      <section className="py-20 bg-gradient-to-r from-gray-800 to-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">Recent Awards</h2>
+            <p className="text-xl text-gray-300">
+              Recognition and accolades received by Audi and its vehicles.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="glass-card rounded-3xl p-8 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">🏆</span>
+              </div>
+              <h3 className="text-xl font-bold mb-4">Car of the Year</h3>
+              <p className="text-gray-400 mb-4">Audi e-tron GT</p>
+              <p className="text-sm text-gray-300">European Car of the Year 2024</p>
+            </div>
+            
+            <div className="glass-card rounded-3xl p-8 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">⭐</span>
+              </div>
+              <h3 className="text-xl font-bold mb-4">Safety Award</h3>
+              <p className="text-gray-400 mb-4">Audi Q5</p>
+              <p className="text-sm text-gray-300">IIHS Top Safety Pick+ 2024</p>
+            </div>
+            
+            <div className="glass-card rounded-3xl p-8 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">🌱</span>
+              </div>
+              <h3 className="text-xl font-bold mb-4">Sustainability</h3>
+              <p className="text-gray-400 mb-4">Audi AG</p>
+              <p className="text-sm text-gray-300">Carbon Trust Certification</p>
+            </div>
+            
+            <div className="glass-card rounded-3xl p-8 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">🎨</span>
+              </div>
+              <h3 className="text-xl font-bold mb-4">Design Award</h3>
+              <p className="text-gray-400 mb-4">Audi A8</p>
+              <p className="text-sm text-gray-300">Red Dot Design Award 2024</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20" style={{backgroundColor: '#1C1C1C'}}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold mb-6">Press Contact</h2>
+          <p className="text-xl text-gray-300 mb-8">
+            For media inquiries, interviews, or additional information, please contact our press team.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="glass-card rounded-3xl p-6 text-center">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-xl">📞</span>
+              </div>
+              <h3 className="text-lg font-bold mb-2">General Press</h3>
+              <p className="text-gray-400 text-sm mb-4">For general media inquiries</p>
+              <p className="text-white font-semibold">press@audi.com</p>
+            </div>
+            
+            <div className="glass-card rounded-3xl p-6 text-center">
+              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-xl">🚗</span>
+              </div>
+              <h3 className="text-lg font-bold mb-2">Product Press</h3>
+              <p className="text-gray-400 text-sm mb-4">For vehicle and technology questions</p>
+              <p className="text-white font-semibold">product@audi.com</p>
+            </div>
+            
+            <div className="glass-card rounded-3xl p-6 text-center">
+              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-xl">💼</span>
+              </div>
+              <h3 className="text-lg font-bold mb-2">Corporate Press</h3>
+              <p className="text-gray-400 text-sm mb-4">For business and financial news</p>
+              <p className="text-white font-semibold">corporate@audi.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   )

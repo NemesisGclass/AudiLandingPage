@@ -5,6 +5,23 @@ import Footer from '../components/Footer'
 const ContactUs: React.FC = () => {
   return (
     <div className="min-h-screen text-white" style={{backgroundColor: '#1C1C1C'}}>
+      <style>{`
+        select {
+          background-color: rgba(255, 255, 255, 0.1) !important;
+          color: white !important;
+        }
+        select option {
+          background-color: #1C1C1C !important;
+          color: white !important;
+          padding: 8px 12px;
+        }
+        select option:hover {
+          background-color: rgba(255, 255, 255, 0.1) !important;
+        }
+        select option:checked {
+          background-color: rgba(255, 255, 255, 0.2) !important;
+        }
+      `}</style>
       <Navbar />
       
       <div className="pt-20">
@@ -27,8 +44,8 @@ const ContactUs: React.FC = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center bg-gray-900 rounded-lg p-8">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-black">📞</span>
+                <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center mx-auto mb-6 border border-gray-600">
+                  <span className="text-2xl font-bold text-white">📞</span>
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Phone</h3>
                 <p className="text-gray-400 mb-4">Speak directly with our team</p>
@@ -36,8 +53,8 @@ const ContactUs: React.FC = () => {
                 <p className="text-gray-400 text-sm">Mon-Fri: 8AM-8PM EST</p>
               </div>
               <div className="text-center bg-gray-900 rounded-lg p-8">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-black">✉️</span>
+                <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center mx-auto mb-6 border border-gray-600">
+                  <span className="text-2xl font-bold text-white">✉️</span>
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Email</h3>
                 <p className="text-gray-400 mb-4">Send us a message anytime</p>
@@ -45,8 +62,8 @@ const ContactUs: React.FC = () => {
                 <p className="text-gray-400 text-sm">Response within 24 hours</p>
               </div>
               <div className="text-center bg-gray-900 rounded-lg p-8">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl font-bold text-black">💬</span>
+                <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center mx-auto mb-6 border border-gray-600">
+                  <span className="text-2xl font-bold text-white">💬</span>
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Live Chat</h3>
                 <p className="text-gray-400 mb-4">Chat with us instantly</p>

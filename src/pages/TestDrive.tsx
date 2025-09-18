@@ -172,6 +172,25 @@ const TestDrive: React.FC = () => {
           mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
           mask-composite: exclude;
         }
+        
+        select {
+          background-color: rgba(255, 255, 255, 0.1) !important;
+          color: white !important;
+        }
+        
+        select option {
+          background-color: #1C1C1C !important;
+          color: white !important;
+          padding: 8px 12px;
+        }
+        
+        select option:hover {
+          background-color: rgba(255, 255, 255, 0.1) !important;
+        }
+        
+        select option:checked {
+          background-color: rgba(255, 255, 255, 0.2) !important;
+        }
       `}</style>
       
       <Navbar />
@@ -575,7 +594,7 @@ const TestDrive: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center group">
-              <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-24 h-24 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 border border-gray-600">
                 <Star size={40} className="text-white" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Premium Experience</h3>
@@ -585,7 +604,7 @@ const TestDrive: React.FC = () => {
             </div>
             
             <div className="text-center group">
-              <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-24 h-24 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 border border-gray-600">
                 <CheckCircle size={40} className="text-white" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Expert Guidance</h3>
@@ -595,7 +614,7 @@ const TestDrive: React.FC = () => {
             </div>
             
             <div className="text-center group">
-              <div className="w-24 h-24 bg-gradient-to-br from-red-500 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-24 h-24 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 border border-gray-600">
                 <User size={40} className="text-white" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Personalized Service</h3>

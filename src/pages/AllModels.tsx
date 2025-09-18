@@ -214,9 +214,9 @@ const AllModels: React.FC = () => {
               
               {/* Action Buttons */}
               <div className={`flex flex-col sm:flex-row gap-3 sm:gap-4 transition-all duration-700 delay-300 ${isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
-                <button className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-lg hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl touch-manipulation">
+                <Link to="/configure" className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-lg hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl touch-manipulation inline-block">
                   Configure
-                </button>
+                </Link>
                 <Link to="/test-drive" className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300 backdrop-blur-sm text-center touch-manipulation">
                   Test Drive
                 </Link>
@@ -353,7 +353,7 @@ const AllModels: React.FC = () => {
               <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 p-8 h-80 hover:border-white/20 transition-all duration-500">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center mb-6 border border-gray-600">
                     <span className="text-2xl">🧠</span>
                   </div>
                   <h3 className="text-2xl font-bold mb-4">AI-Powered Systems</h3>
@@ -368,7 +368,7 @@ const AllModels: React.FC = () => {
               <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 p-8 h-80 hover:border-white/20 transition-all duration-500">
                 <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center mb-6 border border-gray-600">
                     <span className="text-2xl">⚡</span>
                   </div>
                   <h3 className="text-2xl font-bold mb-4">Electric Performance</h3>
@@ -383,7 +383,7 @@ const AllModels: React.FC = () => {
               <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 p-8 h-80 hover:border-white/20 transition-all duration-500">
                 <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center mb-6 border border-gray-600">
                     <span className="text-2xl">🛡️</span>
                   </div>
                   <h3 className="text-2xl font-bold mb-4">Safety First</h3>
@@ -529,9 +529,9 @@ const AllModels: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <button className="bg-white text-black px-12 py-6 text-xl font-semibold rounded-lg hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <Link to="/configure" className="bg-white text-black px-12 py-6 text-xl font-semibold rounded-lg hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg inline-block">
                 Configure Your Audi
-              </button>
+              </Link>
               <Link to="/test-drive" className="border-2 border-white text-white px-12 py-6 text-xl font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300 inline-block">
                 Schedule Test Drive
               </Link>
@@ -539,21 +539,21 @@ const AllModels: React.FC = () => {
             
             <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 border border-gray-600">
                   <span className="text-2xl">⚙️</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Customize</h3>
                 <p className="text-gray-400">Personalize every detail to match your preferences</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 border border-gray-600">
                   <span className="text-2xl">🚗</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Test Drive</h3>
                 <p className="text-gray-400">Experience the performance firsthand</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 border border-gray-600">
                   <span className="text-2xl">🏆</span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Own</h3>

@@ -14,6 +14,19 @@ import AllModels from './pages/AllModels'
 import ElectricVehicles from './pages/ElectricVehicles'
 import ContactUs from './pages/ContactUs'
 import TestDrive from './pages/TestDrive'
+import Configure from './pages/Configure'
+import MyAudi from './pages/MyAudi'
+import ServiceMaintenance from './pages/ServiceMaintenance'
+import PartsAccessories from './pages/PartsAccessories'
+import FinanceLeasing from './pages/FinanceLeasing'
+import Insurance from './pages/Insurance'
+import FindDealer from './pages/FindDealer'
+import CustomerSupport from './pages/CustomerSupport'
+import FAQ from './pages/FAQ'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/TermsOfService'
+import CookiePolicy from './pages/CookiePolicy'
+import LegalNotice from './pages/LegalNotice'
 
 function HomePage() {
   return (
@@ -156,9 +169,26 @@ function App() {
           
           {/* Service Pages */}
           <Route path="/test-drive" element={<TestDrive />} />
+          <Route path="/configure" element={<Configure />} />
+          
+          {/* Services Pages */}
+          <Route path="/myaudi" element={<MyAudi />} />
+          <Route path="/service" element={<ServiceMaintenance />} />
+          <Route path="/parts" element={<PartsAccessories />} />
+          <Route path="/finance" element={<FinanceLeasing />} />
+          <Route path="/insurance" element={<Insurance />} />
           
           {/* Support Pages */}
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/find-dealer" element={<FindDealer />} />
+          <Route path="/customer-support" element={<CustomerSupport />} />
+          <Route path="/faq" element={<FAQ />} />
+          
+          {/* Legal Pages */}
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/cookies" element={<CookiePolicy />} />
+          <Route path="/legal" element={<LegalNotice />} />
         </Routes>
       </div>
     </Router>
