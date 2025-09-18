@@ -25,8 +25,8 @@ const CarCard: React.FC<CarCardProps> = ({ name, image, video }) => {
             playsInline
             preload="metadata"
             autoPlay
-            onMouseEnter={(e) => e.target.play()}
-            onMouseLeave={(e) => e.target.pause()}
+            onMouseEnter={(e) => (e.target as HTMLVideoElement).play()}
+            onMouseLeave={(e) => (e.target as HTMLVideoElement).pause()}
             onError={(e) => console.log('Video error:', e)}
             onLoadStart={() => console.log('Video loading:', video)}
           >

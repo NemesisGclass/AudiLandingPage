@@ -16,7 +16,7 @@ const TestDrive: React.FC = () => {
     phone: '',
     location: '',
     experience: '',
-    interests: []
+    interests: [] as string[]
   })
 
   useEffect(() => {

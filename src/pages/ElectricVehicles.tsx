@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { ChevronLeft, ChevronRight, Battery, Zap, Recycle, MapPin, Star, ArrowRight, CheckCircle } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Battery, Zap, Recycle, MapPin, Star, ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
